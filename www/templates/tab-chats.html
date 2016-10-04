@@ -1,0 +1,35 @@
+<ion-view view-title="Simulator">
+  <ion-content ng-controller="ChatsCtrl">
+    <div class="row">
+      <!-- <div class="col col-50"><iframe src="https://www.youtube.com/embed/wyVM1evRxNw" frameborder="0" width="670" height="350"></iframe></div> -->
+      <img data-ng-src="data:image/png;base64,{{data}}" height="350px" width="670px" />
+      <!-- <div class="col col-50"><iframe src="https://www.youtube.com/embed/gvI2ClWqHO0" frameborder="0" width="670" height="350"></iframe></div> -->
+      <div class="col col-50">
+        <div id="movingMap_canvas" style="background-color: black;width:100%; height:100%"></div>
+      </div>
+    </div>
+    <div class="abc" style="">    
+      <div class="row">
+        <div class="col col-10" style="float: left; padding-top:190px; padding-left:20px;">
+          <button class="button button-assertive button-small button-inline" style="border: 5px solid;width: 75px; height:75px;border-radius:150px 150px 150px 150px;" id="vADD-button1" ng-click="loadMap()">Start Engine</button>
+        </div>
+        <div class="col col-20" id="container-speed" style="width: 300px; height: 300px; float: left; padding-top:80px; padding-left:0px;">
+        </div>
+        <div class="col col-20" id="container-rpm" style="width: 300px; height: 300px; float: left;padding-top:80px; padding-left:0px;">
+        </div>
+        <div class="col col-20" id="containerVolt" style="width: 300px; height: 300px; float: left;padding-top:80px; padding-left:0px;"></div>
+        <div class="col col-20" id="containerStats" style="width: 300px; height: 300px; float: left;padding-top:80px; padding-left:0px;">
+          <ion-item>
+            <ion-label>Flying: <span id="flying"></span></ion-label>
+          </ion-item>
+          <ion-item>
+            <ion-label>Fly state: <span id="flystate"></span></ion-label>
+          </ion-item>
+          <ion-item>
+            <ion-label>Control state: <span id="controlstate"></span></ion-label>
+          </ion-item>
+        </div>
+      </div>
+    </div>
+  </ion-content>
+</ion-view>
